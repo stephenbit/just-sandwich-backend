@@ -1,6 +1,6 @@
 package com.example.justsandwich.server.models;
 import javax.persistence.*;
-import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "sandwiches")
@@ -14,10 +14,10 @@ public class Sandwich {
     private String name;
 
     @Column
-    private SimpleDateFormat dateAdded;
+    private LocalDateTime dateAdded;
 
     @Column
-    private double price;
+    private Long price;
 
     @Column
     private int photoId;
@@ -30,8 +30,8 @@ public class Sandwich {
 
     public Sandwich(
             String name,
-            SimpleDateFormat dateAdded,
-            double price,
+            LocalDateTime dateAdded,
+            Long price,
             int photoId,
             double rating,
             int numberSold
@@ -55,19 +55,19 @@ public class Sandwich {
         this.name = name;
     }
 
-    public SimpleDateFormat getDateAdded() {
+    public LocalDateTime getDateAdded() {
         return dateAdded;
     }
 
-    public void setDateAdded(SimpleDateFormat dateAdded) {
+    public void setDateAdded(LocalDateTime dateAdded) {
         this.dateAdded = dateAdded;
     }
 
-    public double getPrice() {
+    public Long getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 

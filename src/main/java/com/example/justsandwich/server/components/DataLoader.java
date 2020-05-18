@@ -7,7 +7,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.text.SimpleDateFormat;
+ import java.time.LocalDateTime;
 
 @Component
 public class DataLoader implements ApplicationRunner {
@@ -20,13 +20,12 @@ public class DataLoader implements ApplicationRunner {
 
     public void run(ApplicationArguments args) {
 
-        SimpleDateFormat date1 =
-                new SimpleDateFormat ("2020.05.13 10:47:00");
+        LocalDateTime date1 = LocalDateTime.parse("2020-05-13T10:47:00");
 
         Sandwich sandwich1 = new Sandwich(
                 "Just Egg Mayonnaise",
                 date1,
-                4.99,
+                499L,
                 00000001,
                 5,
                 100
@@ -35,7 +34,7 @@ public class DataLoader implements ApplicationRunner {
         Sandwich sandwich2 = new Sandwich(
                 "Just Cheese",
                 date1,
-                4.99,
+                499L,
                 00000002,
                 4.5,
                 100
@@ -44,7 +43,7 @@ public class DataLoader implements ApplicationRunner {
         Sandwich sandwich3 = new Sandwich(
                 "Just Coronation Chicken",
                 date1,
-                4.99,
+                499L,
                 00000003,
                 3.9,
                 100
@@ -53,7 +52,7 @@ public class DataLoader implements ApplicationRunner {
         Sandwich sandwich4 = new Sandwich(
                 "Just Salad",
                 date1,
-                4.99,
+                499L,
                 00000004,
                 5,
                 100
@@ -62,7 +61,7 @@ public class DataLoader implements ApplicationRunner {
         Sandwich sandwich5 = new Sandwich(
                 "Just Ham",
                 date1,
-                4.99,
+                499L,
                 00000005,
                 4.1,
                 100
@@ -71,7 +70,7 @@ public class DataLoader implements ApplicationRunner {
         Sandwich sandwich6 = new Sandwich(
                 "Just BLT",
                 date1,
-                4.99,
+                499L,
                 00000006,
                 4,
                 100
