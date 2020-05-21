@@ -26,7 +26,7 @@ public class DataLoader implements ApplicationRunner {
                 "Just Egg Mayonnaise",
                 date1,
                 499L,
-                00000001,
+                1,
                 5,
                 100
         );
@@ -35,7 +35,7 @@ public class DataLoader implements ApplicationRunner {
                 "Just Cheese",
                 date1,
                 499L,
-                00000002,
+                2,
                 4.5,
                 100
         );
@@ -44,7 +44,7 @@ public class DataLoader implements ApplicationRunner {
                 "Just Coronation Chicken",
                 date1,
                 499L,
-                00000003,
+                3,
                 3.9,
                 100
         );
@@ -53,7 +53,7 @@ public class DataLoader implements ApplicationRunner {
                 "Just Salad",
                 date1,
                 499L,
-                00000004,
+                4,
                 5,
                 100
         );
@@ -62,7 +62,7 @@ public class DataLoader implements ApplicationRunner {
                 "Just Ham",
                 date1,
                 499L,
-                00000005,
+                5,
                 4.1,
                 100
         );
@@ -71,7 +71,7 @@ public class DataLoader implements ApplicationRunner {
                 "Just BLT",
                 date1,
                 499L,
-                00000006,
+                6,
                 4,
                 100
         );
